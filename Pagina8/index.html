@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma de Pagamento</title>
+    <link rel="shortcut icon" href="Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function selecionarPagamento(metodo) {
+            alert('Você selecionou: ' + metodo);
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <button class="icon" onclick="alert('Voltar')">&#8592;</button>
+        <div class="icons">
+            <button class="icon" onclick="alert('Perfil')">&#128100;</button>
+            <button class="icon" onclick="alert('Carrinho')">&#128722;</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Selecione a forma de pagamento desejada:</h2>
+        <div class="buttons">
+            <button class="btn" onclick="selecionarPagamento('Dinheiro')">💰 Dinheiro</button>
+            <button class="btn" onclick="selecionarPagamento('Crédito')">💳 Crédito</button>
+            <button class="btn" onclick="selecionarPagamento('Débito')">🏦 Débito</button>
+            <button class="btn" onclick="selecionarPagamento('Pix')">🔗 Pix</button>
+        </div>
+        <p class="total">Valor Total: </p>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('pizza.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        background-image: url('fundo.png');
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .header {
+        width: 100%;
+        background: #165B24;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .icons {
+        display: flex;
+        gap: 10px;
+    }
+    .icon {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.449);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .btn {
+        background: #165B24;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .btn:hover {
+        background: #1a732c;
+    }
+    .total {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .footer {
+        width: 100%;
+        height: 50px;
+        background: #B22222;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+</style>

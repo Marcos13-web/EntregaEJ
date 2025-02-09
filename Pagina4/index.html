@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas Tradicionais</title>
+    <link rel="shortcut icon" href="Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fundo.png');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #2a6a2a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .back-btn, .icon-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item {
+            background: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            margin: 40px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+        .item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .info {
+            flex: 1;
+        }
+        .info h2 {
+            margin: 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .info p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .add-btn {
+            background: #2a6a2a;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .add-btn:hover {
+            background: #1f541f;
+        }
+        footer {
+            background-color: #8B0000;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-btn">&#x2190;</button>
+        <h1>Pizzas Tradicionais</h1>
+        <div class="icons">
+            <button class="icon-btn">&#128100;</button>
+            <button class="icon-btn">&#128717;</button>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <div class="item">
+                <img src="Marguerita.png" alt="Marguerita">
+                <div class="info">
+                    <h2>01. Marguerita <span>R$ 89.90</span></h2>
+                    <p>Ingredientes: Molho de tomate, manjericão, muçarela de búfala e azeitonas pretas.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="caprese.jpg" alt="Caprese">
+                <div class="info">
+                    <h2>02. Caprese <span>R$ 94.90</span></h2>
+                    <p>Ingredientes: Molho de tomate, pesto de azeitonas pretas e muçarela de búfala.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="calabresa.jpg" alt="Calabresa">
+                <div class="info">
+                    <h2>03. Calabresa <span>R$ 79.90</span></h2>
+                    <p>Ingredientes: Molho de tomate, muçarela e calabresa.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="portuguesa.jpg" alt="Portuguesa">
+                <div class="info">
+                    <h2>04. Portuguesa <span>R$ 89.90</span></h2>
+                    <p>Ingredientes: Molho de tomate, ervilhas, ovos cozidos e presunto.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Muçarela.jpg" alt="Muçarela">
+                <div class="info">
+                    <h2>05. Muçarela <span>R$ 79.90</span></h2>
+                    <p>Ingredientes: Molho de tomate, muçarela e tomates fatiados.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="parma.jpg" alt="Parma">
+                <div class="info">
+                    <h2>06. Parma <span>R$ 99.90</span></h2>
+                    <p>Ingredientes: Molho de tomate, Presunto de Parma, rúcula e azeitonas pretas.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
+

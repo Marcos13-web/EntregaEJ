@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces</title>
+    <link rel="shortcut icon" href="Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fundo.png');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #2a6a2a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .back-btn, .icon-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item {
+            background: white;
+            display: flex;
+            align-items: center;
+            margin: 40px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+        .item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .info {
+            flex: 1;
+        }
+        .info h2 {
+            margin: 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .info p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .add-btn {
+            background: #2a6a2a;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .add-btn:hover {
+            background: #1f541f;
+        }
+        footer {
+            background-color: #8B0000;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-btn">&#x2190;</button>
+        <h1>Doces</h1>
+        <div class="icons">
+            <button class="icon-btn">&#128100;</button>
+            <button class="icon-btn">&#128717;</button>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <div class="item">
+                <img src="Pudim.jpg" alt="Pudim">
+                <div class="info">
+                    <h2>01. Pudim de leite <span>R$ 16.90</span></h2>
+                    <p>Pudim individual de aproximadamente 300 gr.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="banana.jpg" alt="banana">
+                <div class="info">
+                    <h2>02. Banana <span>R$ 64.90</span></h2>
+                    <p>Ingredientes: Banana, leite condensado, doce de leite e canela.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="mesclado.jpg" alt="Mesclada">
+                <div class="info">
+                    <h2>03. Mesclada <span>R$ 69.90</span></h2>
+                    <p>Ingredientes: chocolate branco e chocolate ao leite.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="uva.jpg" alt="Uva">
+                <div class="info">
+                    <h2>04. Uva <span>R$ 74.90</span></h2>
+                    <p>Ingredientes: Chocolate ao leite e uvas verdes.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="morango.jpg" alt="Morango">
+                <div class="info">
+                    <h2>05. Morango <span>R$ 69.90</span></h2>
+                    <p>Ingredientes: chocolate ao leite, morangos e granulado.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="cnfete.jpg" alt="Confete">
+                <div class="info">
+                    <h2>06. Confete <span>R$ 64.90</span></h2>
+                    <p>Ingredientes: Chocolate ao leite e confetes.</p>
+                    <button class="add-btn">&#128722; Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
